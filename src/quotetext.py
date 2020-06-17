@@ -3,7 +3,7 @@
 # *
 # * IBM SPSS Products: Statistics Common
 # *
-# * (C) Copyright IBM Corp. 1989, 2013
+# * (C) Copyright IBM Corp. 1989, 2020
 # *
 # * US Government Users Restricted Rights - Use, duplication or disclosure
 # * restricted by GSA ADP Schedule Contract with IBM Corp. 
@@ -57,14 +57,14 @@ def run():
         inputname = unescape(sys.argv[1])
         outputname = unescape(sys.argv[2])
     except:
-        print """Usage: python civilize.py "inputname" "outputname". """
+        print("""Usage: python civilize.py "inputname" "outputname". """)
         return
     
     try:
         f = open(inputname, "r")
         fout = open(outputname, "w")
     except:
-        print "quotetext: ", sys.exc_info()[1]
+        print("quotetext: ", sys.exc_info()[1])
         return
     
     
@@ -83,7 +83,7 @@ def run():
     f.close()
     fout.close()
 
-    print "Input file %s quoted and written to %s" % (inputname, outputname)
+    print("Input file %s quoted and written to %s" % (inputname, outputname))
 
     
     
