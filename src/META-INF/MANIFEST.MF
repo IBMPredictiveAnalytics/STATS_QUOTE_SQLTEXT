@@ -1,4 +1,5 @@
 Name: STATS QUOTE SQLTEXT
+Display-Name: Quote SQL text
 Dialog-Specs: quotetext.spd
 Code-Files: quotetext.py
 Misc-Files: Readme.md,LICENSE,default.png
